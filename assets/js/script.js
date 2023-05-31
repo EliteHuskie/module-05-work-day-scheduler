@@ -20,4 +20,14 @@ function updateTimeBlockColors() {
   });
 }
 
+  // Update the color coding on page load
+  updateTimeBlockColors();
+
+  // Add click event listener for the save button
+  $(".saveBtn").on("click", function () {
+    var blockId = $(this).closest(".time-block").attr("id");
+    var userText = $(this).siblings(".description").val();
+    localStorage.setItem(blockId, userText);
+  });
+
 });
