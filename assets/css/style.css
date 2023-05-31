@@ -1,8 +1,10 @@
+/* Applies settings below to body of webpage */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 }
 
+/* Settings below are used for text area */
 textarea {
   background: transparent;
   border: none;
@@ -12,39 +14,47 @@ textarea {
   padding: 10px;
 }
 
+/* Description class used with text area */
 .description {
   white-space: pre-wrap;
 }
 
+/* Time block uses the below setting */
 .time-block {
   border-radius: 15px;
 }
 
+/* Row class uses the following setting */
 .row {
   border-top: 1px solid white;
 }
 
+/* Hour class uses the below settings */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/* If time is in the past, it will use the following class */
 .past {
   background-color: #d3d3d3;
   color: white;
 }
 
+/* If time is in the present, it will use the following settings */
 .present {
   background-color: #ff6961;
   color: white;
 }
 
+/* If time is in the futurue, it will use the below */
 .future {
   background-color: #77dd77;
   color: white;
 }
 
+/* Save button has the following properties below */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -53,6 +63,7 @@ textarea {
   color: white;
 }
 
+/* Hovering over save button will use the below properties */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
