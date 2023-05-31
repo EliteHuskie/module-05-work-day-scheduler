@@ -30,4 +30,17 @@ function updateTimeBlockColors() {
     localStorage.setItem(blockId, userText);
   });
 
+    // Retrieve saved user input from local storage and update the textarea values
+    $(".time-block").each(function () {
+      var blockId = $(this).attr("id");
+      var userText = localStorage.getItem(blockId);
+  
+      if (userText !== null) {
+        $(this).find(".description").val(userText);
+      }
+    });
+  
+    // Display the current date in the header
+    $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY"));
+
 });
